@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&family=Rajdhani:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>QR Free</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./public/logo.png" alt="logo" />
+        <h1>QR Free</h1>
+      </div>
+      <p>
+        QRCodes gerados de graça:
+        <strong id="count"> </strong>
+      </p>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form">
+          <h1>Vamos gerar seu <strong>QRCODE</strong> Grátis!</h1>
+          <p>
+            Selecione a cor do fundo e a cor do códgio, lembre-se de manter um
+            bom contraste para facilitar a leitura nas câmeras! <br />
+            Coloque o link no campo ULR e pronto, só gerar!
+          </p>
+
+          <div class="colors">
+            <div class="">
+              <label for="">Cor do Fundo</label>
+              <input type="color" name="" id="bgColor" value="#ffffff" />
+            </div>
+            <div class="">
+              <label for="">Cor do Código</label>
+              <input type="color" name="" id="codeColor" />
+            </div>
+          </div>
+          <div class="link">
+            <small>Cole ou digite aqui a url ou texto</small>
+            <div class="">
+              <label for="">URL: </label>
+              <input
+                type="text"
+                name=""
+                id="url"
+                placeholder="http://www.exemple.com"
+              />
+            </div>
+            <button onclick="newQRCode()" id="create">
+              <i class="fa fa-qrcode"></i>
+              GERAR QRCODE
+            </button>
+          </div>
+        </div>
+        <div class="result">
+          <div id="qrcode">
+            <img src="./public/logo.png" alt="" class="cardLogo" />
+            <p>Seu QRCode vai aparecer aqui!</p>
+          </div>
+          <a href="" class="disable" download="qrcode.png" id="download">
+            <i class="fa fa-download"></i>
+            BAIXAR QRCODE
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="./public/logop.svg" alt="dev" />
+    </footer>
+
+    <script src="qrcode.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

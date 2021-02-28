@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f2ef;
+  font-family: "Prompt", sans-serif;
+}
+
+a,
+button {
+  font-family: "Rajdhani", sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: #15805e;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  width: 100vw;
+  height: 10rem;
+  max-height: 120px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 60px;
+  width: 60px;
+}
+
+header .logo h1 {
+  margin-left: 2rem;
+  font-weight: 200;
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+header p strong {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container {
+  padding: 2rem 3rem;
+  margin-top: 5rem;
+  height: 100%;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+}
+
+main .container .form {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  max-width: 300px;
+  border-right: 1px solid #6f7d7722;
+  padding: 0 1rem;
+}
+
+main .container .form h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #6bcdae;
+  margin-bottom: 2rem;
+}
+
+main .container .form h1 strong {
+  color: #15805e;
+  position: relative;
+}
+
+main .container .form h1 strong::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 46px;
+  width: 200px;
+  height: 5px;
+  border-radius: 50px;
+  background: linear-gradient(to right, rgba(256, 256, 256, 0.2), #15805e);
+}
+
+main .container .form p {
+  text-align: justify;
+  margin: 2rem 0.7rem 2rem 0;
+  color: #15805e;
+}
+
+main .container .form > div {
+  display: flex;
+  margin: 1rem 0;
+  position: relative;
+}
+main .container .form .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1faf7;
+  border-radius: 8px;
+  border: 2px solid #15805e25;
+}
+main .container .form .colors > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+main .container .form .colors label {
+  margin-bottom: 0.5rem;
+  color: #15805e;
+}
+
+main .container .form .colors input {
+  background: transparent;
+  border: none;
+  width: 50px;
+}
+
+main .container .form .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10rem;
+}
+
+main .container .form .link small {
+  color: #15805e5f;
+}
+
+main .container .form .link div {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+main .container .form .link label {
+  color: #15805e;
+  font-weight: 200;
+  width: 24px;
+}
+
+main .container .form .link input {
+  width: calc(100% - 30px);
+  height: 30px;
+  border: 2px solid #1dad7e;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+main .container .form .link input::placeholder {
+  color: #0a5a4127;
+}
+
+main .container .form .link button {
+  height: 40px;
+  width: 150px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #15805e;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+main .container .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+main .container .result a {
+  border-radius: 8px;
+  padding: 2px 8px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #15805e;
+}
+
+main .container .result a i {
+  margin-right: 2rem;
+}
+
+main .container .result #qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .result #qrcode .cardLogo {
+  width: 50px;
+  height: 50px;
+  margin: 3rem;
+  opacity: 0.7;
+}
+main .container .result #qrcode p {
+  color: #15805e2e;
+  font-size: 2rem;
+}
+main .container .result a {
+  visibility: visible;
+}
+main .container .result a.disable {
+  visibility: hidden;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6f7d77;
+}
+
+footer img {
+  width: 5rem;
+}
