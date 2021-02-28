@@ -65,6 +65,7 @@ main {
 main .container {
   padding: 2rem 3rem;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   height: 100%;
   width: 70%;
   max-width: 1000px;
@@ -150,7 +151,7 @@ main .container .form .colors input {
 main .container .form .link {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 10rem;
 }
@@ -250,4 +251,74 @@ footer {
 
 footer img {
   width: 5rem;
+}
+
+@media (max-width: 1150px) {
+  * {
+    text-align: center;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  main .container {
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  main .container .form {
+    padding: 0.2rem;
+    border-right: 0;
+    border-bottom: 1px solid #6f7d7722;
+  }
+
+  main .container .form h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  main .container .form p {
+    text-align: center;
+    margin: 2rem auto 1rem;
+  }
+
+  main .container .form h1 strong::before {
+    display: none;
+  }
+  main .container .result {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 220px;
+    height: 220px;
+  }
+
+  main .container .result #qrcode img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    visibility: hidden;
+    display: none;
+  }
+
+  main .container {
+    flex-direction: column;
+  }
+
+  main .container .form h1 strong::before {
+    display: initial;
+
+    height: 4px;
+    right: 70px;
+  }
+  footer {
+    position: relative;
+  }
 }
