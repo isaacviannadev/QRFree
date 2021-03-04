@@ -1,7 +1,13 @@
 let divQr = document.getElementById("qrcode");
 var strong = document.querySelector("header  p strong");
 
-let count = 0;
+let count = localStorage.getItem("@Qrfree-Contagem");
+
+if (!count) {
+  count = 0;
+} else {
+  localStorage.getItem("@Qrfree-Contagem");
+}
 
 strong.innerHTML = count;
 
@@ -36,11 +42,11 @@ function saveQRCode() {
   let img = divQr.querySelector("img").src;
   btn.href = img;
 
-  btn.classList.remove('disable');
+  btn.classList.remove("disable");
 }
 
 function increment() {
   count++;
   strong.innerHTML = count;
+  localStorage.setItem("@Qrfree-Contagem", count);
 }
-

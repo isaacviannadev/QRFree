@@ -56,50 +56,52 @@ header p strong {
   margin-left: 2rem;
 }
 
-main {
+section {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
-main .container {
-  padding: 2rem 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  height: 100%;
-  width: 70%;
-  max-width: 1000px;
+section .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem 2rem;
+  height: 100%;
+  width: 70%;
+  max-width: 1250px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
 }
 
-main .container .form {
-  flex: 1;
+section .container .form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 100%;
+  max-height: 500px;
   max-width: 300px;
   border-right: 1px solid #6f7d7722;
   padding: 0 1rem;
 }
 
-main .container .form h1 {
+section .container .form h1 {
   font-weight: 400;
   line-height: 1.2;
   color: #6bcdae;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-main .container .form h1 strong {
+section .container .form h1 strong {
   color: #15805e;
   position: relative;
 }
 
-main .container .form h1 strong::before {
+section .container .form h1 strong::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -110,26 +112,23 @@ main .container .form h1 strong::before {
   background: linear-gradient(to right, rgba(256, 256, 256, 0.2), #15805e);
 }
 
-main .container .form p {
+section .container .form p {
   text-align: justify;
-  margin: 2rem 0.7rem 2rem 0;
+  margin: 2rem 1rem 0;
   color: #15805e;
 }
 
-main .container .form > div {
-  display: flex;
-  margin: 1rem 0;
-  position: relative;
-}
-main .container .form .colors {
+section .container .form .colors {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0 2rem;
+
   background-color: #f1faf7;
   border-radius: 8px;
   border: 2px solid #15805e25;
 }
-main .container .form .colors > div {
+section .container .form .colors > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,41 +136,40 @@ main .container .form .colors > div {
   margin: 1rem;
 }
 
-main .container .form .colors label {
+section .container .form .colors label {
   margin-bottom: 0.5rem;
   color: #15805e;
 }
 
-main .container .form .colors input {
+section .container .form .colors input {
   background: transparent;
   border: none;
   width: 50px;
 }
 
-main .container .form .link {
+section .container .form .link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 10rem;
 }
 
-main .container .form .link small {
+section .container .form .link small {
   color: #15805e5f;
 }
 
-main .container .form .link div {
+section .container .form .link div {
   flex: 1;
   margin-bottom: 1rem;
 }
 
-main .container .form .link label {
+section .container .form .link label {
   color: #15805e;
   font-weight: 200;
   width: 24px;
 }
 
-main .container .form .link input {
+section .container .form .link input {
   width: calc(100% - 30px);
   height: 30px;
   border: 2px solid #1dad7e;
@@ -179,30 +177,31 @@ main .container .form .link input {
   padding: 10px;
 }
 
-main .container .form .link input::placeholder {
+section .container .form .link input::placeholder {
   color: #0a5a4127;
 }
 
-main .container .form .link button {
+section .container .form .link button {
   height: 40px;
-  width: 150px;
+  width: 100%;
   padding: 4px;
   border-radius: 8px;
   background: #15805e;
   color: #fff;
+  margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
-main .container .result {
+section .container .result {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 100%;
   height: 500px;
 }
 
-main .container .result a {
+section .container .result a {
   border-radius: 8px;
   padding: 2px 8px;
   margin-top: 2rem;
@@ -210,31 +209,31 @@ main .container .result a {
   border-bottom: 2px solid #15805e;
 }
 
-main .container .result a i {
+section .container .result a i {
   margin-right: 2rem;
 }
 
-main .container .result #qrcode {
+section .container .result #qrcode {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main .container .result #qrcode .cardLogo {
+section .container .result #qrcode .cardLogo {
   width: 100px;
   height: 100px;
   margin: 3rem;
   opacity: 0.7;
 }
-main .container .result #qrcode p {
+section .container .result #qrcode p {
   color: #15805e2e;
   font-size: 2rem;
 }
-main .container .result a {
+section .container .result a {
   visibility: visible;
 }
-main .container .result a.disable {
+section .container .result a.disable {
   visibility: hidden;
 }
 
@@ -262,37 +261,37 @@ footer img {
     justify-content: space-between;
   }
 
-  main .container {
+  section .container {
     width: 90%;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  main .container .form {
+  section .container .form {
     padding: 0.2rem;
     border-right: 0;
     border-bottom: 1px solid #6f7d7722;
   }
 
-  main .container .form h1 {
+  section .container .form h1 {
     margin-bottom: 0.5rem;
   }
 
-  main .container .form p {
+  section .container .form p {
     text-align: center;
     margin: 2rem auto 1rem;
   }
 
-  main .container .form h1 strong::before {
+  section .container .form h1 strong::before {
     display: none;
   }
-  main .container .result {
+  section .container .result {
     margin-top: 5rem;
     margin-bottom: 2rem;
     width: 220px;
     height: 220px;
   }
 
-  main .container .result #qrcode img {
+  section .container .result #qrcode img {
     width: 200px;
     height: 200px;
   }
@@ -308,11 +307,11 @@ footer img {
     display: none;
   }
 
-  main .container {
+  section .container {
     flex-direction: column;
   }
 
-  main .container .form h1 strong::before {
+  section .container .form h1 strong::before {
     display: initial;
 
     height: 4px;
@@ -320,5 +319,12 @@ footer img {
   }
   footer {
     position: relative;
+  }
+}
+
+@media (max-width: 340px) {
+
+  header .logo h1 {
+    font-size: 2rem;
   }
 }
