@@ -235,6 +235,7 @@ section .container .result #qrcode p {
   color: #15805e2e;
   font-size: 2rem;
 }
+
 section .container .result a {
   visibility: visible;
 }
@@ -334,6 +335,10 @@ footer img {
   }
   section .container {
     flex-direction: column;
+  }
+
+  section .container .result #qrcode img {
+    max-width: 200px;
   }
 }
 
