@@ -1,4 +1,3 @@
-<center> ![image](https://user-images.githubusercontent.com/60493567/152648585-efcc699d-4224-4449-9905-4bead2a5e94e.png) </center>
 <h1 align="center">
     <img alt="QRFree" src="https://user-images.githubusercontent.com/60493567/152648585-efcc699d-4224-4449-9905-4bead2a5e94e.png" />
 </h1>
