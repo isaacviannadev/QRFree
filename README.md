@@ -1,8 +1,8 @@
+<center>![image](https://user-images.githubusercontent.com/60493567/152648585-efcc699d-4224-4449-9905-4bead2a5e94e.png)</center>
+
+
 # QRFree
 Pensando em atendar uma demanda cada vez mais crescente, criei essa página simples para criação rápida de QR Codes, onde vc pode escrever ou colar um texto ou link, gerar e baixar o seu QR Code Grátis, com algumas opções de estilização de cor.
-
-![image](https://user-images.githubusercontent.com/60493567/152648585-efcc699d-4224-4449-9905-4bead2a5e94e.png)
-
 
 ## 🛠️ Construído com
 
